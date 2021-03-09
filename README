@@ -1,0 +1,17 @@
+### User Retention ### 
+
+This program is a prototype focused on computing user retention for offline internal analytics. A more productionized version of this could be an internal tool used 
+within companies. 
+
+It accepts one command line argument as the name of the CSV file. This CSV file which contains two columns: Unix epoch timestamps, and a userId could be imagined as logs from a user activity database. I chose the first to the 15th days of the month but the program can be 
+further parametrized to accept any date range, or work without date ranges at all.
+
+Program outputs an NxN grid which shows the subsequent user journey of a user who started on a given day. It answers the question as to which days led to the most user retention.
+
+Only python3 runtime and std libraries have been used in this solution. 
+
+It can be run with: python3 retention.py [path to csv file]
+
+
+
+
